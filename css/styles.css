@@ -1,0 +1,101 @@
+/* fontes */
+@font-face{
+    font-family: Quicksand-ligtht;
+    src: url(../fonts/Quicksand-Light.ttf) format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-light: #f4f4f4;
+    --color-dark: #333;
+    --color-orage: #ff6600; 
+    --spacing-sm: 10px;
+    --spacing-md: 30px;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Quicksand-ligtht;
+}
+
+ul, ol {
+    list-style: none;
+    color: var(--color-light);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a {
+    color: #f4f4f4;
+    font-weight: 800;
+    text-decoration: none;
+
+
+    &:hover {
+        color: #ff6600;
+    }
+}
+
+.hero{
+    height: 100dvh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+     url(../images/motos/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+.header-hero{   
+    background-color: rgba(0, 0, 0, 0.5);
+   height: 100px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding-inline: var(--spacing-md);
+}
+
+.nav-hero-menu{
+    display: flex;
+    gap: var(--spacing-md);
+
+}
+
+h1{
+    color: var(--color-light);
+}
+
+.cta{
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    color: var(--color-light);
+    text-align: center;
+}
+
+
+.cta h2{
+    font-size: 10vmin;
+    text-wrap: balance;
+}
+
+.cta p{
+    width: 60%;
+    text-wrap: balance;
+    line-height: 1.6;
+}
+
+section{
+    height: 100dvh;
+
+} 
